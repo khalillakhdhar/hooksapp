@@ -19,8 +19,9 @@ function App() {
     <>
     {/* ajout d'un todo */}
     <h2>Ajouter une tache</h2>
-    <input type="text" value={todo} onChange={(e) => setTodo(e.target.value)} />
-    <button onClick={addTodo}>Ajouter</button>
+    <input type="text" className='form-control' value={todo} onChange={(e) => setTodo(e.target.value)} />
+    <br />
+    <button className='btn btn-primary' onClick={addTodo}>Ajouter</button>
     {/* affichage des todos */}
     <h2>Liste des taches</h2>
     <ul>
